@@ -30,7 +30,7 @@ htmlhead;
 		<p>中文全称：<input type="text" name="placename" value="$row[placename]" /></p>
 		<p>英文全称：<input type="text" name="placeenname" value="$row[placeenname]" /></P>
 		<p><input type="submit" name="submit" value="确定" /></p>
-		<input type="hidden" name="placeid" value="$_GET[placeid]" />
+		<input type="hidden" id="placeid" name="placeid" value="$_GET[placeid]" />
 		<input type="hidden" name="action" value="update" />
 	</form>
 form;
@@ -55,7 +55,7 @@ form;
 				<td></td>
 			</tr>
 			<tr>
-				<td><input size="2" type="text" name="roomfloor" id="roomfloor" /></td>
+				<td><input size="2" type="text" name="floor" id="floor" /></td>
 				<td><input size="5" type="text" name="roomnum" id="roomnum" /></td>
 				<td><input type="text" name="roomname" id="roomname" /></td>
 				<td><input type="text" name="roomuse" id="roomuse" /></td>

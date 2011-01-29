@@ -12,6 +12,16 @@ $(document).ready(function() {
 	});
 	
 	$("#addroom").click(function() {
-		
+		$.post(domain + "model/saveroom.php",{
+			roomnum:	$("#roomnum").val(),
+			roomname:	$("#roomname").val(),
+			usetext:	$("#roomuse").val(),
+			users:		$("#roomuser").val(),
+			contact:	$("#roomcontact").val(),
+			belong:		$("#placeid").val(),
+			floor:		$("#floor").val()
+		},function(data) {
+			$("#roomnum").val(Number($("#roomnum").val())+1);
+		});
 	});
 });

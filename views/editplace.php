@@ -1,5 +1,7 @@
 <?php
-
+/*
+ * 编辑地点表单,包含建筑物名称及室内房间编辑
+ */
 	session_start();
 	
 	include '../configure.php';

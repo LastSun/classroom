@@ -18,7 +18,7 @@ $(document).ready(function() {
 			usetext:	$("#roomuse").val(),
 			users:		$("#roomuser").val(),
 			contact:	$("#roomcontact").val(),
-			belong:		$("#placeid").val(),
+			placeid:	$("#placeid").val(),
 			floor:		$("#floor").val()
 		},function(data) {
 			$("#roomnum").val(Number($("#roomnum").val())+1);

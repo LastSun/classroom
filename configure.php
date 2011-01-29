@@ -12,6 +12,8 @@
 	$sql_password	=	"";						//sqlserver root password
 	$sql_database	=	"classes";				//database name
 
+	$roomstatus = array("","空闲");
+	
 	/*
 	 * connect sqlserver
 	 */

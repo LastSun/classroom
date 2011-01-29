@@ -35,8 +35,9 @@
 	width:100%;
 }
 
-#roominform {
+#leftdown {
 	height:80%;
 	width:100%;
 	background:#ddd;
+	overflow:scroll;
 }

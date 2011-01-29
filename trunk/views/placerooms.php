@@ -7,6 +7,10 @@
 	$result = mysql_query($query);
 	
 	echo "<div id='placeinform'>";
+	
+	/*
+	 * 编辑建筑物属性
+	 */
 	echo <<< func
 	<div id="oprate">
 		<a class="button" href="views/editplace.php?placeid=$_POST[id]">编辑</a>

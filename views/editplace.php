@@ -12,8 +12,9 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	    <link type="text/css" href="css/all.css" rel="stylesheet" />
-		<script type="text/javascript" src="jQuerylib/jquery-1.4.2.min.js"></script>
-		<script type="text/javascript" src="js/conf.js"></script>
+		<script type="text/javascript" src="$jquerylib"></script>
+		<script type="text/javascript" src="$jslib/conf.js"></script>
+		<script type="text/javascript" src="$jslib/editplace_script.js"></script>
 		<title> </title>
 	</head>
 	<body>
@@ -33,6 +34,35 @@ htmlhead;
 		<input type="hidden" name="action" value="update" />
 	</form>
 form;
+
+	echo <<< editroom
+	<hr />
+	<div id="addinit">
+		<p>
+			<label for="roomfloor">楼层:</label><input size="2" type="text" name="roomfloor" id="roomfloor" />
+			<label for="roomstart">房间号:</label><input size="5" type="text" name="roomstart" id="roomstart" /> - <input size="5" type="text" name="roomend" id="roomend" />
+			<input type="button" id="addinit_button" value="增加" />
+		</p>
+	</div>
+	<table>
+		<tr>
+			<td><label for="roomnum">房间号</label></td>
+			<td><label for="roomname">房间名</label></td>
+			<td><label for="roomuse">用途</label></td>
+			<td><label for="roomuser">联系人</label></td>
+			<td><label for="roomcontact">电话号码</label></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><input type="text" name="roomnum" id="roomnum" /></td>
+			<td><input type="text" name="roomname" id="roomname" /></td>
+			<td><input type="text" name="roomuse" id="roomuse" /></td>
+			<td><input type="text" name="roomuser" id="roomuser" /></td>
+			<td><input type="text" name="roomcontact" id="roomcontact" /></td>
+			<td><input type="button" name="add" id="addroom" value="增加" /></td>
+		</tr>
+	</table>
+editroom;
 	
 	echo <<< htmltail
 	</body>

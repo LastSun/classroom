@@ -27,10 +27,10 @@ htmlhead;
 	
 	echo <<< form
 	<form action="../model/saveplace.php" method="post">
-		<p>中文全称：<input type="text" name="placename" value=$row[placename] /></p>
-		<p>英文全称：<input type="text" name="placeenname" value=$row[placeenname] /></P>
+		<p>中文全称：<input type="text" name="placename" value="$row[placename]" /></p>
+		<p>英文全称：<input type="text" name="placeenname" value="$row[placeenname]" /></P>
 		<p><input type="submit" name="submit" value="确定" /></p>
-		<input type="hidden" name="placeid" value=$_GET[placeid] />
+		<input type="hidden" name="placeid" value="$_GET[placeid]" />
 		<input type="hidden" name="action" value="update" />
 	</form>
 form;
@@ -38,30 +38,35 @@ form;
 	echo <<< editroom
 	<hr />
 	<div id="addinit">
-		<p>
+		<p style="display:none;">
 			<label for="roomfloor">楼层:</label><input size="2" type="text" name="roomfloor" id="roomfloor" />
 			<label for="roomstart">房间号:</label><input size="5" type="text" name="roomstart" id="roomstart" /> - <input size="5" type="text" name="roomend" id="roomend" />
 			<input type="button" id="addinit_button" value="增加" />
 		</p>
+	
+		<table>
+			<tr>
+				<td>楼层</td>
+				<td>房间号</td>
+				<td>房间名</td>
+				<td>用途</td>
+				<td>联系人</td>
+				<td>电话号码</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><input size="2" type="text" name="roomfloor" id="roomfloor" /></td>
+				<td><input size="5" type="text" name="roomnum" id="roomnum" /></td>
+				<td><input type="text" name="roomname" id="roomname" /></td>
+				<td><input type="text" name="roomuse" id="roomuse" /></td>
+				<td><input type="text" name="roomuser" id="roomuser" /></td>
+				<td><input type="text" name="roomcontact" id="roomcontact" /></td>
+				<td><input type="button" name="add" id="addroom" value="增加" /></td>
+			</tr>
+		</table>
 	</div>
-	<table>
-		<tr>
-			<td><label for="roomnum">房间号</label></td>
-			<td><label for="roomname">房间名</label></td>
-			<td><label for="roomuse">用途</label></td>
-			<td><label for="roomuser">联系人</label></td>
-			<td><label for="roomcontact">电话号码</label></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td><input type="text" name="roomnum" id="roomnum" /></td>
-			<td><input type="text" name="roomname" id="roomname" /></td>
-			<td><input type="text" name="roomuse" id="roomuse" /></td>
-			<td><input type="text" name="roomuser" id="roomuser" /></td>
-			<td><input type="text" name="roomcontact" id="roomcontact" /></td>
-			<td><input type="button" name="add" id="addroom" value="增加" /></td>
-		</tr>
-	</table>
+	<div id="adddiv">
+	</div>
 editroom;
 	
 	echo <<< htmltail

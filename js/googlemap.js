@@ -27,6 +27,12 @@
 		 lo:0.00546097755432
  }
  
+ $(document).ready(function() {
+
+	initialize_map();
+		
+});
+ 
  function fixlatlng(latlng) {
 	 la = (Number(latlng.lat()) + Number(latlngfix.la)).toString();
 	 lo = (Number(latlng.lng()) + Number(latlngfix.lo)).toString();

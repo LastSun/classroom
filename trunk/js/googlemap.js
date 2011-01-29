@@ -61,7 +61,7 @@
 	 
 	 google.maps.event.addListener(polygon, 'click' ,function() {
 		$.post(domain + "views/placerooms.php",{
-			id:id
+			placeid:id
 		},function(data) {
 			$("#roominform").html(data);
 		}) 

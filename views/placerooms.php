@@ -1,4 +1,8 @@
 <?php
+/*
+ * 显示建筑物控制面板,包括名称属性和房间
+ */
+
 	session_start();
 	
 	include '../configure.php';
@@ -33,6 +37,7 @@ func;
 			<tr>
 				<td>房间号</td>
 				<td>状态</td>
+				<td></td>
 			</tr>
 roomtable;
 	
@@ -47,7 +52,7 @@ roomtable;
 			$floor = $row['floor'];
 			echo "<tr>楼层:$floor</tr>";
 		}
-		echo "<tr><td>$row[roomnum]</td><td>$roomstatus[$sta] </td></tr>";
+		echo "<tr><td>$row[roomnum]</td><td>$roomstatus[$sta]</td><td><a href='$domain/views/appview.php?roomid=$row[roomid]'>申请</a></td></tr>";
 	}
 	
 	echo "</table></div>";

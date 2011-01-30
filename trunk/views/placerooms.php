@@ -36,7 +36,7 @@ func;
 			</tr>
 roomtable;
 	
-	$query = "select * from classrooms where placeid=$_POST[placeid] order by floor";
+	$query = "select * from classrooms where placeid=$_POST[placeid] order by floor,roomnum";
 	$result = mysql_query($query);
 	$floor = '0';
 	while ($row=mysql_fetch_array($result))

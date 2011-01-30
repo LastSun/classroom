@@ -1,11 +1,10 @@
 <?php
-	include 'common.php';
-
+	
 	define('ABSPATH', dirname(dirname(__FILE__)) . '\\');
 	
-	$domain = "http://127.0.0.1/classroomselect/";
-	$jquerylib = $domain . "jQuerylib/jquery-1.4.2.min.js";
-	$jslib = $domain . "js";
+	$domain = "http://127.0.0.1/classroomselect";
+	$jquerylib = $domain . "/jQuerylib/jquery-1.4.2.min.js";
+	$jslib = $domain . "/js";
 	
 	$sql_server		=	"127.0.0.1";			//sqlserver name
 	$sql_username	=	"root";					//sqlserver root username
@@ -55,5 +54,5 @@
 		jumphtml('htmls/sqllink_error.html');
 	}
 	
-	
+	include 'common.php';
 ?>

@@ -5,6 +5,8 @@
 	include '../configure.php';
 	
 	htmlhead("none","ui");
+
+	addjs("appview.js")
 ?>
 
 	<form action="<?php echo $domain; ?>/model/saveapp.php" method="post">
@@ -13,6 +15,8 @@
 			<label>申请时间段:</label>
 		</p>
 		<div id="starttime">
+		</div>
+		<div id="starttime1">
 			<p>
 				<input size="4" type="text" name="startyear" id="startyear" value="<?php echo date("Y"); ?>" />
 				年

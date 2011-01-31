@@ -45,4 +45,10 @@ head;
 htmltail;
 	}
 	
+	function addjs($jsname)
+	{
+		global $jslib;
+		echo "<script type='text/javascript' src='$jslib/$jsname'></script>";
+	}
+	
 ?>

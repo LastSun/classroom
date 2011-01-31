@@ -2,9 +2,11 @@
 	
 	define('ABSPATH', dirname(dirname(__FILE__)) . '\\');
 	
-	$domain = "http://127.0.0.1/classroomselect";
-	$jquerylib = $domain . "/jQuerylib/jquery-1.4.2.min.js";
-	$jslib = $domain . "/js";
+	$domain		=	"http://127.0.0.1/classroomselect";
+	$jquerylib	=	$domain . "/jQuerylib/jquery-1.4.4.min.js";
+	$jqueryui	=	$domain . "/jQuerylib/jquery-ui-1.8.9.custom.min.js";
+	$jslib		=	$domain . "/js";
+	$jqueryuitheme		=	$domain . "/css/ui-lightness/jquery-ui-1.8.9.custom.css";
 	
 	$sql_server		=	"127.0.0.1";			//sqlserver name
 	$sql_username	=	"root";					//sqlserver root username

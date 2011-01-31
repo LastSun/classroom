@@ -4,7 +4,7 @@
 
 	include '../configure.php';
 	
-	htmlhead();
+	htmlhead("none","ui");
 ?>
 
 	<form action="<?php echo $domain; ?>/model/saveapp.php" method="post">

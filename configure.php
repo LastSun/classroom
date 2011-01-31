@@ -8,10 +8,12 @@
 	
 	$sql_server		=	"127.0.0.1";			//sqlserver name
 	$sql_username	=	"root";					//sqlserver root username
-	$sql_password	=	"";						//sqlserver root password
+	$sql_password	=	"admin";						//sqlserver root password
 	$sql_database	=	"classes";				//database name
 
 	$roomstatus = array("","空闲");
+	
+	$calendar = CAL_GREGORIAN;
 	
 	/*
 	 * connect sqlserver

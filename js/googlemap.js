@@ -141,7 +141,7 @@
 	 polygon.getPath().forEach(function(element,num) {
 		 polys.push(element.lat() + ":" + element.lng());
 	 });
-	 $.post(domain + "model/saveplace.php",{
+	 $.post("model/saveplace.php",{
 		 action:"insert",
 		 polys:polys.toString(),
 		 placename:"yage"

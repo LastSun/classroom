@@ -6,7 +6,9 @@
 	
 	htmlhead("none","ui");
 
-	addjs("appview.js")
+	addjs("appview.js");
+	
+	htmlheadend();
 ?>
 
 	<form action="<?php echo $domain; ?>/model/saveapp.php" method="post">

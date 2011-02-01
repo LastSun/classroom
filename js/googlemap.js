@@ -60,7 +60,7 @@
 	 });
 	 
 	 google.maps.event.addListener(polygon, 'click' ,function() {
-		$.post(domain + "views/placerooms.php",{
+		$.post("views/placerooms.php",{
 			placeid:id
 		},function(data) {
 			$("#roominform").html(data);
@@ -71,7 +71,7 @@
  function initmarkers(fix)
  {
  	var polygon = [];
- 	$.post(domain + "model/getplaces.php",function(data) {
+ 	$.post("model/getplaces.php",function(data) {
  		polygons = data.split(';');
  		for(i in polygons)
  		{

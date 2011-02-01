@@ -7,6 +7,7 @@
 	include '../configure.php';
 
 	htmlhead("编辑建筑");
+	htmlheadend();
 
 	$query = "select * from places where placeid = $_GET[placeid]";
 	$result = mysql_query($query);

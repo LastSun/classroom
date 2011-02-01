@@ -22,15 +22,17 @@
 				<script type="text/javascript" src="$jquerylib"></script>
 				<script type="text/javascript" src="$jslib/conf.js"></script>
 htmlhead;
-		if ($ui="ui")
+		if ($ui=="ui")
 		{
 			echo "<script type='text/javascript' src='$jqueryui'></script>";
 			echo "<link type='text/css' href='$jqueryuitheme' rel='stylesheet' />";
 		}
-		
+		echo "<title>$title</title>";
+	}
+	
+	function htmlheadend()
+	{
 		echo <<< head
-				<script type="text/javascript" src="$jqueryui"></script>
-				<title>$title</title>
 			</head>
 			<body>
 head;

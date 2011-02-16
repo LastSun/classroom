@@ -12,14 +12,14 @@ $(document).ready(function() {
 	});
 	
 	$("#addroom").click(function() {
-		$.post(domain + "model/saveroom.php",{
-			roomnum:	$("#roomnum").val(),
-			roomname:	$("#roomname").val(),
-			usetext:	$("#roomuse").val(),
-			users:		$("#roomuser").val(),
-			contact:	$("#roomcontact").val(),
-			placeid:	$("#placeid").val(),
-			floor:		$("#floor").val()
+		$.post("../model/saveroom.php",{
+			roomnum:	cNULL($("#roomnum").val()),
+			roomname:	cNULL($("#roomname").val()),
+			usetext:	cNULL($("#roomuse").val()),
+			users:		cNULL($("#roomuser").val()),
+			contact:	cNULL($("#roomcontact").val()),
+			placeid:	cNULL($("#placeid").val()),
+			floor:		cNULL($("#floor").val())
 		},function(data) {
 			$("#roomnum").val(Number($("#roomnum").val())+1);
 		});

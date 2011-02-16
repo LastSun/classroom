@@ -21,7 +21,21 @@ $(document).ready(function() {
 			placeid:	cNULL($("#placeid").val()),
 			floor:		cNULL($("#floor").val())
 		},function(data) {
-			$("#roomnum").val(Number($("#roomnum").val())+1);
+			if(data="OK")
+			{
+				freshinfo();
+				$("#roomnum").val(Number($("#roomnum").val())+1);
+			}
 		});
 	});
+	
+	freshinfo();
 });
+
+function freshinfo() {
+	$.post("../model/getroom.php",{
+		placeid:	$("#placeid").val()
+	},function(data) {
+		$("#roominfo").html(data);
+	});
+}

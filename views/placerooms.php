@@ -17,7 +17,7 @@
 	 */
 	echo <<< func
 	<div id="oprate">
-		<a class="button" href="views/editplace.php?placeid=$_POST[placeid]">编辑</a>
+		<a class="button" href="views/editplace.php?placeid=$_POST[placeid]" target="_blank">编辑</a>
 		<a class="button" href="views/deleteplace.php?placeid=$_POST[placeid]">删除</a>
 	</div>
 func;
@@ -52,7 +52,7 @@ roomtable;
 			$floor = $row['floor'];
 			echo "<tr>楼层:$floor</tr>";
 		}
-		echo "<tr><td>$row[roomnum]</td><td>$roomstatus[$sta]</td><td><a href='$domain/views/appview.php?roomid=$row[roomid]'>申请</a></td></tr>";
+		echo "<tr><td>$row[roomnum]</td><td>$roomstatus[$sta]</td></tr>";
 	}
 	
 	echo "</table></div>";

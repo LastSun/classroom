@@ -57,6 +57,8 @@ form;
 	</div>
 	<div id="adddiv">
 	</div>
+	<div id="roominfo">
+	</div>
 editroom;
 	
 	htmltail();

@@ -10,7 +10,7 @@
 	
 	$sql_server		=	"127.0.0.1";			//sqlserver name
 	$sql_username	=	"root";					//sqlserver root username
-	$sql_password	=	"woshiyygg336";						//sqlserver root password
+	$sql_password	=	"woshiyygg336";			//sqlserver root password
 	$sql_database	=	"classes";				//database name
 
 	$roomstatus = array("","空闲");

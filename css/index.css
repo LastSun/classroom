@@ -4,6 +4,7 @@
 	position:absolute;
 	right:5%;
 	top:5%;
+	background-color:#CCC;
 }
 
 #select_position {
@@ -41,3 +42,4 @@
 	background:#ddd;
 	overflow:scroll;
 }
+

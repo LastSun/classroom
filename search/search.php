@@ -3,6 +3,6 @@
 	
 	include '../configure.php';
 
-	$result = "select * from "
+	$result = "select * from places where placename = $_POST[keyword]";
 
 ?>

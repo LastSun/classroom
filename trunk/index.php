@@ -6,11 +6,12 @@
 	
 	echo <<< link
 		<link type="text/css" href="css/index.css" rel="stylesheet" />
+		<link type="text/css" href="css/all.css" rel="stylesheet" />
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 		<script type="text/javascript" src="$domain/js/googlemap.js"></script>
 		<script type="text/javascript" src="$domain/js/control_map.js"></script>
+        <script type="text/javascript" src="jQuerylib/jquery-ui-1.8.9.custom.min.js"></script>
 link;
-
 	addjs("index.js");
 
 	htmlheadend();

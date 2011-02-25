@@ -81,12 +81,12 @@ htmltail;
 	//验证开始
 	foreach($ArrPostAndGet as $key=>$value){
 		if (FunStringExist($value,$ArrFiltrate)){
-			echo "<script language=\"javascript\">alert(\"非法字符\");</script>";
-			if (emptyempty($StrGoUrl))
+			die("<script language=\"javascript\">alert(\"非法字符\");</script>");
+			/*if (emptyempty($StrGoUrl))
 				echo "<script language=\"javascript\">history.go(-1);</script>";
 			else
 				echo "<script language=\"javascript\">window.location=\"".$StrGoUrl."\";</script>";
-			exit;
+			exit;*/
 		}
 	}
 	

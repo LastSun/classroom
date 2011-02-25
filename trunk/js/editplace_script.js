@@ -21,11 +21,23 @@ $(document).ready(function() {
 			placeid:	cNULL($("#placeid").val()),
 			floor:		cNULL($("#floor").val())
 		},function(data) {
-			if(data="OK")
+			if(data=="OK")
 			{
 				freshinfo();
 				$("#roomnum").val(Number($("#roomnum").val())+1);
 			}
+			else $("#s_room_data").html(data);
+		});
+	});
+	
+	$("#submit_name").click(function() {
+		$.post("../model/saveplace.php",{
+			placename:		cNULL($("#placename").val()),
+			placeenname:	cNULL($("#placeenname").val()),
+			placeid:		cNULL($("#placeid").val()),
+			action:			'update'
+		},function(data) {
+			$("#s_name_data").html(data);
 		});
 	});
 	

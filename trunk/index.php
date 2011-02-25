@@ -11,6 +11,8 @@
 		<script type="text/javascript" src="$domain/js/control_map.js"></script>
 link;
 
+	addjs("index.js");
+
 	htmlheadend();
 	
 ?>
@@ -18,6 +20,12 @@ link;
 		<div id="left">
 			<div id="logo"></div>
 			<div id="leftdown">
+				<div id="div_search">
+					<p>
+						<input type="text" id="in_keyword" />
+						<input type="button" id="bu_search" value="搜索" />
+					</p>
+				</div>
 				<div id="roominform"></div>
 			</div>
 		</div>

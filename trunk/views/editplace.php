@@ -16,13 +16,11 @@
 	
 	echo <<< form
 	<script type="text/javascript" src="$jslib/editplace_script.js"></script>
-	<form action="../model/saveplace.php" method="post">
-		<p>中文全称：<input type="text" name="placename" value="$row[placename]" /></p>
-		<p>英文全称：<input type="text" name="placeenname" value="$row[placeenname]" /></P>
-		<p><input type="submit" name="submit" value="确定" /></p>
-		<input type="hidden" id="placeid" name="placeid" value="$_GET[placeid]" />
-		<input type="hidden" name="action" value="update" />
-	</form>
+	<p>中文全称：<input type="text" id="placename" name="placename" value="$row[placename]" /></p>
+	<p>英文全称：<input type="text" id="placeenname" name="placeenname" value="$row[placeenname]" /></P>
+	<p><input id="submit_name" type="submit" name="submit" value="确定" /><span id="s_name_data" class="info_data"></span></p>
+	<input type="hidden" id="placeid" name="placeid" value="$_GET[placeid]" />
+	<input type="hidden" name="action" value="update" />
 form;
 
 	echo <<< editroom
@@ -32,6 +30,7 @@ form;
 			<label for="roomfloor">楼层:</label><input size="2" type="text" name="roomfloor" id="roomfloor" />
 			<label for="roomstart">房间号:</label><input size="5" type="text" name="roomstart" id="roomstart" /> - <input size="5" type="text" name="roomend" id="roomend" />
 			<input type="button" id="addinit_button" value="增加" />
+			<span id="s_room_data" class="info_data"></span>
 		</p>
 	
 		<table>

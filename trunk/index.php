@@ -12,7 +12,6 @@
 		<script type="text/javascript" src="$domain/js/control_map.js"></script>
         <script type="text/javascript" src="jQuerylib/jquery-ui-1.8.9.custom.min.js"></script>
 link;
-	addjs("index.js");
 
 	htmlheadend();
 	
@@ -22,10 +21,7 @@ link;
 			<div id="logo"></div>
 			<div id="leftdown">
 				<div id="div_search">
-					<p>
-						<input type="text" id="in_keyword" />
-						<input type="button" id="bu_search" value="搜索" />
-					</p>
+					<?php include 'views/search.php';?>
 				</div>
 				<div id="roominform"></div>
 			</div>

@@ -11,15 +11,24 @@
 	$result = mysql_query($query);
 	
 	echo "<div id='placeinform'>";
-	
 	/*
 	 * 显示建筑物属性
 	 */
 	echo <<< func
 	<div id="oprate">
 		<a class="button" href="views/editplace.php?placeid=$_POST[placeid]" target="_blank">编辑</a>
-		<a class="button" href="views/deleteplace.php?placeid=$_POST[placeid]">删除</a>
+		<a id="delete" class="button">删除</a>
+		<script type="text/javascript">
+	</script>
 	</div>
+	<script type="text/javascript">
+		$("#delete").click(function() {
+			if(confirm("确认删除？不可还原！！！"))
+			{
+				window.location="views/deleteplace.php?placeid=$_POST[placeid]";
+			}
+		});
+	</script>
 func;
 
 	if($row = mysql_fetch_array($result)) {
@@ -58,6 +67,7 @@ roomtable;
 	echo "</table></div>";
 	
 	echo <<< script
+		
 	</div>
 script;
 	

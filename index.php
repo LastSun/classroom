@@ -19,10 +19,11 @@ link;
 	    
 		<div id="left">
 			<div id="logo"></div>
+			<div id="div_search">
+				<?php include 'views/search.php';?>
+			</div>
 			<div id="leftdown">
-				<div id="div_search">
-					<?php include 'views/search.php';?>
-				</div>
+				
 				<div id="roominform"></div>
 			</div>
 		</div>

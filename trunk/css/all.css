@@ -22,7 +22,7 @@ body {
 	font-size:12px;
 	border:1px #aaa;
 	border-style:none solid solid none;
-	padding:2px;
+	padding:4px;
 }
 
 .button:hover {
@@ -47,3 +47,4 @@ h2 {
 	color:#eee;
 	margin:10px;
 }
+

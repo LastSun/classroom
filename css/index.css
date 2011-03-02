@@ -4,11 +4,11 @@
 	position:absolute;
 	right:5%;
 	top:5%;
-	background-color:#CCC;
+	background-color:#eee;
+	border:1px solid #CCC;
 }
 
-#select_position {
-	background-color:#fff;
+#select_position,#control {
 	padding:3px;
 	margin:5px;
 }
@@ -29,17 +29,26 @@
 	position:absolute;
 	width:20%;
 	height:100%;
+	overflow:hidden;
 }
 
 #logo {
-	height:20%;
+	height:10%;
 	width:100%;
+}
+
+#div_search {
+	height:10%;
+	width:100%;
+	text-align:center;
 }
 
 #leftdown {
-	height:80%;
+	height:78%;
 	width:100%;
-	background:#ddd;
-	overflow:scroll;
+	overflow:auto;
 }
 
+#search {
+	margin:auto;
+}

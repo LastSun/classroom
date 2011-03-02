@@ -15,6 +15,7 @@
 	 * 显示建筑物属性
 	 */
 	echo <<< func
+	<div class='title'>
 	<div id="oprate">
 		<a class="button" href="views/editplace.php?placeid=$_POST[placeid]" target="_blank">编辑</a>
 		<a id="delete" class="button">删除</a>
@@ -32,8 +33,10 @@
 func;
 
 	if($row = mysql_fetch_array($result)) {
+    	
 		echo "<h1 id='placename' class='placename'>$row[placename]</h1>";
 		echo "<h2 id='placename_eng' class='placename_eng'>$row[placeenname]</h2>";
+        echo "</div>";
 	}
 
 	

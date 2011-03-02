@@ -1,9 +1,49 @@
 @CHARSET "UTF-8";
 
-html { height: 100% }
-body { height: 100%; margin: 0px; padding: 0px }
-#map_canvas { height: 100% }
+html {
+	height:100%;
+}
+
+body {
+	height:100%;
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+}
+
+#map_canvas {
+	height: 100%
+}
 
 .button {
 	cursor:pointer;
+	background:#00C;
+	color:#FFF;
+	font-size:12px;
+	border:1px #000;
+	border-style:none solid solid none;
+	padding:2px;
+}
+
+.button:hover {
+	color:#00C;
+	background:#eee;
+	border-style:solid none none solid;
+}
+
+.title {
+	background:#06F;
+	padding:3px 0px;
+	margin:3px 0px;
+}
+
+h1 {
+	background:#06F;
+	color:#eee;
+	margin:10px;
+}
+
+h2 {
+	color:#eee;
+	margin:10px;
 }

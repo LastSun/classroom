@@ -28,21 +28,25 @@ link;
 				<div id="roominform"></div>
 			</div>
 		</div>
-		<div id="map_canvas"></div>
-		<div id="pannel">
-			<div id="select_position">
-				<a id="stcen_dongqu" class="button">东区</a>
-				<a id="stcen_xiqu" class="button">西区</a>
-				<a id="stcen_nanqu" class="button">南区</a>
-				<a id="stcen_beiqu" class="button">北区</a>
-			</div>
-			<div id="control">
-				<a id="ctrl_edit" class="button">编辑</a>
-				<a id="ctrl_save" class="button">保存</a>
-			</div>
-			<div id="mouseplacename"></div>
-		</div>
-		<div id="inform"></div>
+        <div id="right">
+            <div id="map_canvas"></div>
+            <div id="pannel">
+                <div id="select_position">
+                    <a id="stcen_dongqu" class="button">东区</a>
+                    <a id="stcen_xiqu" class="button">西区</a>
+                    <a id="stcen_nanqu" class="button">南区</a>
+                    <a id="stcen_beiqu" class="button">北区</a>
+                </div>
+                <div id="control">
+                    <a id="ctrl_edit" class="button">编辑</a>
+                    <a id="ctrl_save" class="button">保存</a>
+                </div>
+            </div>
+            <div id="info_container">
+            	<div id="mouseplacename"></div>
+            	<div id="inform"></div>
+            </div>
+        </div>
 <?php 
 	htmltail();
 ?>

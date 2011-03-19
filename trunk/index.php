@@ -11,6 +11,7 @@
 		<script type="text/javascript" src="$domain/js/googlemap.js"></script>
 		<script type="text/javascript" src="$domain/js/control_map.js"></script>
         <script type="text/javascript" src="jQuerylib/jquery-ui-1.8.9.custom.min.js"></script>
+        <script type="text/javascript" src="$domain/js/addsplace.js"></script>
 link;
 
 	htmlheadend();

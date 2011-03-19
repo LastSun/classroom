@@ -218,6 +218,10 @@
 			editpolygon(event.latLng);
 	  	});
 		
+		google.maps.event.addListener(map, 'dblclick', function(event) {
+			addadd(event.latLng);	
+		});
+		
 		/*google.maps.event.addListener(map, 'dragend', function() {
 			alert(map.getCenter());
 		});*/
